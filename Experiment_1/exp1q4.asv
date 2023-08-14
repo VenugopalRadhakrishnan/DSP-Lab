@@ -1,0 +1,10 @@
+pi=3.13159;
+[s,Fs]=audioread('F:\EE386-DSP_lab_venugopal\Experiment_1\speech.wav');
+t=linspace(0,length(s)/Fs,length(s))
+N=100000;
+f=
+y=s*cos(2*pi*1000/10000);
+Y=fft(y)
+S=fft(s)
+F = ((0:1/N:1-1/N)*Fs)
+
